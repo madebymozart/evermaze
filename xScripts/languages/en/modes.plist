@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>modes_modes</key>
+	<string>Modes</string>
+	<key>modes_escape</key>
+	<string>Escape</string>
+	<key>modes_escape_description</key>
+	<string>Find the exit &amp; Avoid Llurkers!</string>
+	<key>modes_energy</key>
+	<string>Energy</string>
+	<key>modes_energy_description</key>
+	<string>Collect energy to open the exit!</string>
+	<key>modes_search</key>
+	<string>Search</string>
+	<key>modes_search_description</key>
+	<string>Find all lost Llumas in the maze!</string>
+	<key>modes_survive</key>
+	<string>Survive</string>
+	<key>modes_survive_description</key>
+	<string>Survive A legion of Llurkers!</string>
+	<key>modes_portals</key>
+	<string>Portals</string>
+	<key>modes_portals_description</key>
+	<string>Teleport till you find the exit!</string>
+	<key>modes_tiles</key>
+	<string>Tiles</string>
+	<key>modes_tiles_description</key>
+	<string>Blocks you move over will disappear!</string>
+</dict>
+</plist>

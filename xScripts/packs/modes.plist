@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>asset_modes_energy</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{158,264}</string>
+                <key>spriteSourceSize</key>
+                <string>{158,264}</string>
+                <key>textureRect</key>
+                <string>{{272,562},{158,264}}</string>
+                <key>textureRotated</key>
+                <true/>
+                <key>triangles</key>
+                <string>10 11 12 0 10 12 9 7 8 9 1 7 9 10 1 6 4 5 6 7 4 1 2 3 7 1 3 7 3 4 0 1 10</string>
+                <key>vertices</key>
+                <string>110 8 95 115 158 117 158 123 46 264 42 264 42 257 63 147 0 146 0 140 104 2 106 0 110 0</string>
+                <key>verticesUV</key>
+                <string>528 672 421 657 419 720 413 720 272 608 272 604 279 604 389 625 390 562 396 562 534 666 536 668 536 672</string>
+            </dict>
+            <key>asset_modes_escape</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{264,293}</string>
+                <key>spriteSourceSize</key>
+                <string>{264,293}</string>
+                <key>textureRect</key>
+                <string>{{272,1},{264,293}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>7 8 9 5 6 7 0 7 9 5 7 2 5 3 4 5 2 3 0 1 2 0 2 7 27 44 45 28 43 44 29 42 43 31 32 40 38 34 37 38 39 34 35 36 37 34 35 37 39 33 34 40 32 33 40 33 39 31 40 41 30 31 41 42 29 30 42 30 41 28 29 43 27 28 44 26 27 45 10 25 26 25 10 11 12 22 23 16 18 19 15 16 19 16 17 18 15 19 20 14 15 20 14 20 21 13 14 21 13 21 22 12 13 22 12 23 24 11 12 24 25 11 24 10 26 45</string>
+                <key>vertices</key>
+                <string>148 215 195 218 136 291 134 293 129 293 127 291 68 217 115 215 115 101 148 101 183 6 213 24 239 49 264 93 264 158 253 191 233 221 201 249 203 201 219 179 228 158 231 121 222 91 216 79 195 55 174 43 150 34 120 32 99 37 80 46 53 70 40 91 35 105 32 143 39 167 60 201 60 249 23 212 2 175 0 155 0 95 18 56 47 24 88 1 108 0 158 0</string>
+                <key>verticesUV</key>
+                <string>420 216 467 219 408 292 406 294 401 294 399 292 340 218 387 216 387 102 420 102 455 7 485 25 511 50 536 94 536 159 525 192 505 222 473 250 475 202 491 180 500 159 503 122 494 92 488 80 467 56 446 44 422 35 392 33 371 38 352 47 325 71 312 92 307 106 304 144 311 168 332 202 332 250 295 213 274 176 272 156 272 96 290 57 319 25 360 2 380 1 430 1</string>
+            </dict>
+            <key>asset_modes_login</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{64,64}</string>
+                <key>spriteSourceSize</key>
+                <string>{64,64}</string>
+                <key>textureRect</key>
+                <string>{{272,827},{64,64}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>13 7 8 9 3 4 5 15 9 12 1 2 10 11 2 10 2 3 9 10 3 12 2 11 20 0 1 20 1 12 19 20 12 19 12 9 16 18 19 16 17 18 16 19 9 15 16 9 9 4 5 15 5 6 14 15 6 7 13 14 7 14 6 22 13 8 0 21 22 0 20 21 0 22 8</string>
+                <key>vertices</key>
+                <string>64 15 64 48 52 64 17 64 3 56 0 44 0 15 15 0 49 0 14 47 26 57 43 55 51 47 22 10 10 19 9 37 17 29 17 18 47 18 49 35 57 37 55 21 45 10</string>
+                <key>verticesUV</key>
+                <string>336 842 336 875 324 891 289 891 275 883 272 871 272 842 287 827 321 827 286 874 298 884 315 882 323 874 294 837 282 846 281 864 289 856 289 845 319 845 321 862 329 864 327 848 317 837</string>
+            </dict>
+            <key>asset_modes_logo</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{205,103}</string>
+                <key>spriteSourceSize</key>
+                <string>{205,103}</string>
+                <key>textureRect</key>
+                <string>{{272,722},{205,103}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>3 5 6 3 4 5 2 6 7 2 3 6 1 7 8 1 2 7 0 8 9 0 1 8 32 37 38 32 36 37 35 33 34 33 35 36 33 36 32 31 32 38 10 30 31 30 10 11 11 28 29 27 13 14 15 25 26 15 24 25 17 22 23 18 21 22 18 19 20 18 20 21 17 18 22 16 17 23 16 24 15 16 23 24 14 15 26 27 14 26 13 27 28 12 13 28 11 12 28 30 11 29 10 31 38</string>
+                <key>vertices</key>
+                <string>99 79 75 103 25 103 0 78 0 63 24 63 34 75 49 80 60 78 84 56 93 15 129 67 140 77 152 79 175 66 180 46 170 29 147 25 138 29 119 46 102 23 123 2 136 0 175 0 196 14 205 36 205 70 183 103 128 103 104 79 80 43 66 28 40 25 23 41 0 41 0 25 18 5 34 0 71 0</string>
+                <key>verticesUV</key>
+                <string>371 801 347 825 297 825 272 800 272 785 296 785 306 797 321 802 332 800 356 778 365 737 401 789 412 799 424 801 447 788 452 768 442 751 419 747 410 751 391 768 374 745 395 724 408 722 447 722 468 736 477 758 477 792 455 825 400 825 376 801 352 765 338 750 312 747 295 763 272 763 272 747 290 727 306 722 343 722</string>
+            </dict>
+            <key>asset_modes_portals</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{269,269}</string>
+                <key>spriteSourceSize</key>
+                <string>{269,269}</string>
+                <key>textureRect</key>
+                <string>{{1,301},{269,269}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>17 15 16 14 18 19 19 13 14 22 9 10 21 10 11 21 22 10 25 5 6 5 25 26 25 6 7 27 3 4 28 2 3 29 2 28 16 0 31 30 31 0 1 29 30 1 30 0 29 1 2 27 28 3 26 27 4 5 26 4 24 25 7 24 7 8 23 24 8 9 23 8 9 22 23 20 21 11 20 11 12 19 20 12 19 12 13 14 15 18 17 18 15 16 31 17 42 47 48 43 47 42 45 43 44 45 46 43 43 46 47 32 41 42 41 32 33 36 37 38 36 38 39 35 36 39 34 35 39 34 39 40 41 33 40 40 33 34 32 42 48 60 65 66 61 65 60 63 61 62 63 64 61 61 64 65 49 59 60 59 49 50 55 52 53 53 54 55 55 56 52 52 56 57 58 50 51 58 51 57 57 51 52 59 50 58 49 60 66</string>
+                <key>vertices</key>
+                <string>131 83 157 98 183 130 192 168 186 211 163 244 133 265 109 269 77 269 55 264 23 245 0 207 0 152 6 129 20 107 53 82 96 77 76 112 55 123 38 142 29 171 35 201 53 224 75 236 99 239 126 230 148 209 157 188 158 165 149 141 134 124 103 110 186 50 218 80 228 110 235 142 219 185 190 217 197 187 196 128 190 102 172 84 149 71 77 71 63 74 61 66 87 46 113 39 153 39 230 14 254 38 269 68 269 119 255 147 234 174 238 125 235 110 239 89 231 63 215 44 192 32 121 31 102 34 102 27 133 4 154 0 202 0</string>
+                <key>verticesUV</key>
+                <string>132 384 158 399 184 431 193 469 187 512 164 545 134 566 110 570 78 570 56 565 24 546 1 508 1 453 7 430 21 408 54 383 97 378 77 413 56 424 39 443 30 472 36 502 54 525 76 537 100 540 127 531 149 510 158 489 159 466 150 442 135 425 104 411 187 351 219 381 229 411 236 443 220 486 191 518 198 488 197 429 191 403 173 385 150 372 78 372 64 375 62 367 88 347 114 340 154 340 231 315 255 339 270 369 270 420 256 448 235 475 239 426 236 411 240 390 232 364 216 345 193 333 122 332 103 335 103 328 134 305 155 301 203 301</string>
+            </dict>
+            <key>asset_modes_rate</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{56,53}</string>
+                <key>spriteSourceSize</key>
+                <string>{56,53}</string>
+                <key>textureRect</key>
+                <string>{{479,780},{56,53}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>1 2 3 0 1 3 4 10 11 4 9 10 4 6 7 4 5 6 4 7 8 4 8 9</string>
+                <key>vertices</key>
+                <string>10 53 0 53 0 18 10 18 39 17 56 18 56 36 48 53 13 53 13 16 29 0 39 0</string>
+                <key>verticesUV</key>
+                <string>489 833 479 833 479 798 489 798 518 797 535 798 535 816 527 833 492 833 492 796 508 780 518 780</string>
+            </dict>
+            <key>asset_modes_search</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{264,264}</string>
+                <key>spriteSourceSize</key>
+                <string>{264,264}</string>
+                <key>textureRect</key>
+                <string>{{272,296},{264,264}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>37 21 22 20 23 24 24 19 20 27 28 16 15 28 29 28 15 16 30 12 13 30 11 12 8 9 10 7 8 10 6 7 10 6 10 11 5 6 11 11 30 31 11 31 5 34 2 3 33 3 4 34 1 2 36 22 0 36 37 22 35 36 0 35 1 34 35 0 1 33 34 3 32 33 4 5 32 4 5 31 32 29 30 13 29 13 14 15 29 14 27 16 17 26 27 17 26 17 18 25 26 18 19 24 25 19 25 18 20 21 23 37 23 21</string>
+                <key>vertices</key>
+                <string>148 14 170 36 186 66 188 101 181 126 170 151 182 156 264 238 264 243 243 264 238 264 146 172 120 184 86 188 61 183 33 169 12 145 0 119 0 70 10 40 37 13 63 0 120 0 75 31 53 42 33 69 29 84 31 110 43 132 67 150 110 153 131 142 151 116 155 101 153 74 142 53 116 33 101 29</string>
+                <key>verticesUV</key>
+                <string>420 310 442 332 458 362 460 397 453 422 442 447 454 452 536 534 536 539 515 560 510 560 418 468 392 480 358 484 333 479 305 465 284 441 272 415 272 366 282 336 309 309 335 296 392 296 347 327 325 338 305 365 301 380 303 406 315 428 339 446 382 449 403 438 423 412 427 397 425 370 414 349 388 329 373 325</string>
+            </dict>
+            <key>asset_modes_settings</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{56,56}</string>
+                <key>spriteSourceSize</key>
+                <string>{56,56}</string>
+                <key>textureRect</key>
+                <string>{{479,722},{56,56}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>5 8 9 6 7 8 5 6 8 2 5 9 4 5 2 4 2 3 1 2 9 0 1 9</string>
+                <key>vertices</key>
+                <string>56 8 56 44 44 56 12 56 3 47 0 41 0 14 4 6 19 0 37 0</string>
+                <key>verticesUV</key>
+                <string>535 730 535 766 523 778 491 778 482 769 479 763 479 736 483 728 498 722 516 722</string>
+            </dict>
+            <key>asset_modes_shop</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{56,56}</string>
+                <key>spriteSourceSize</key>
+                <string>{56,56}</string>
+                <key>textureRect</key>
+                <string>{{338,827},{56,56}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>10 11 12 0 10 12 8 6 7 8 9 6 5 6 9 0 5 9 3 4 5 0 2 5 0 1 2 5 2 3 0 9 10</string>
+                <key>vertices</key>
+                <string>16 4 56 4 56 17 52 56 38 56 36 46 25 47 20 56 7 56 7 19 0 7 0 0 12 0</string>
+                <key>verticesUV</key>
+                <string>354 831 394 831 394 844 390 883 376 883 374 873 363 874 358 883 345 883 345 846 338 834 338 827 350 827</string>
+            </dict>
+            <key>asset_modes_survive</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{269,298}</string>
+                <key>spriteSourceSize</key>
+                <string>{269,298}</string>
+                <key>textureRect</key>
+                <string>{{1,1},{269,298}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>3 4 5 0 1 3 1 2 3 0 3 5 7 8 11 10 11 8 10 8 9 7 11 12 6 7 12 14 15 16 18 19 13 14 16 17 13 14 17 18 13 17 13 19 20 67 43 44 45 42 43 41 45 46 46 40 41 48 49 38 51 34 35 51 35 36 50 51 36 54 31 32 55 30 31 56 28 29 59 26 27 26 59 60 26 60 25 63 23 24 64 22 23 66 44 21 66 67 44 65 66 21 65 21 22 64 65 22 63 64 23 62 63 24 25 62 24 25 61 62 25 60 61 59 27 28 28 57 58 28 58 59 56 29 30 56 57 28 55 56 30 54 55 31 54 32 33 53 54 33 52 53 33 51 52 33 51 33 34 37 49 50 50 36 37 49 37 38 48 38 39 47 48 39 40 46 47 40 47 39 41 42 45 67 45 43</string>
+                <key>vertices</key>
+                <string>155 212 155 237 113 237 112 216 127 195 138 195 206 130 213 165 198 195 168 205 152 196 141 172 179 129 92 133 126 174 113 201 83 201 65 188 55 159 60 141 74 125 204 12 237 37 257 63 269 93 269 146 252 217 231 237 202 243 189 282 169 298 101 298 81 285 65 244 41 238 25 228 15 211 0 143 0 96 6 68 26 41 58 15 89 3 108 0 165 0 92 40 74 49 53 67 38 90 32 123 46 173 48 198 88 212 104 232 109 260 119 265 153 262 167 226 184 210 216 203 222 173 228 155 236 114 229 88 223 77 204 56 168 37 130 32</string>
+                <key>verticesUV</key>
+                <string>156 213 156 238 114 238 113 217 128 196 139 196 207 131 214 166 199 196 169 206 153 197 142 173 180 130 93 134 127 175 114 202 84 202 66 189 56 160 61 142 75 126 205 13 238 38 258 64 270 94 270 147 253 218 232 238 203 244 190 283 170 299 102 299 82 286 66 245 42 239 26 229 16 212 1 144 1 97 7 69 27 42 59 16 90 4 109 1 166 1 93 41 75 50 54 68 39 91 33 124 47 174 49 199 89 213 105 233 110 261 120 266 154 263 168 227 185 211 217 204 223 174 229 156 237 115 230 89 224 78 205 57 169 38 131 33</string>
+            </dict>
+            <key>asset_modes_tiles</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{269,269}</string>
+                <key>spriteSourceSize</key>
+                <string>{269,269}</string>
+                <key>textureRect</key>
+                <string>{{1,572},{269,269}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>1 2 3 0 1 3 5 6 7 4 5 7 9 10 11 8 9 11 13 14 15 12 13 15 17 18 19 16 17 19 21 22 23 20 21 23</string>
+                <key>vertices</key>
+                <string>69 269 0 269 0 200 69 200 269 269 200 269 200 200 269 200 169 169 99 169 99 99 169 99 69 169 0 169 0 99 69 99 269 68 200 68 200 0 269 0 169 68 99 68 99 0 169 0</string>
+                <key>verticesUV</key>
+                <string>70 841 1 841 1 772 70 772 270 841 201 841 201 772 270 772 170 741 100 741 100 671 170 671 70 741 1 741 1 671 70 671 270 640 201 640 201 572 270 572 170 640 100 640 100 572 170 572</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>3</integer>
+            <key>pixelFormat</key>
+            <string>ALPHA_INTENSITY</string>
+            <key>premultiplyAlpha</key>
+            <false/>
+            <key>realTextureFileName</key>
+            <string>BFyfNnRb2AhIPjKe.pvr.ccz</string>
+            <key>size</key>
+            <string>{537,892}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:269025ea96d31c031ee2d61c462d3c73:87a91a55052c61111357178a691d56f7:8ff8ae520221fc1021c261d0ddb48300$</string>
+            <key>textureFileName</key>
+            <string>BFyfNnRb2AhIPjKe.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

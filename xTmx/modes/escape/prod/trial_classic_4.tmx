@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="17" height="17" tilewidth="108" tileheight="108" nextobjectid="1">
+ <tileset firstgid="1" name="Sample Tile Set" tilewidth="108" tileheight="108" tilecount="25" columns="5">
+  <image source="HuU8CDaMcCP5WClY.pvr.ccz" width="540" height="540"/>
+ </tileset>
+ <layer name="spawn_layer" width="17" height="17">
+  <data encoding="base64" compression="zlib">
+   eJxjYGBgYGXABKxY2NjEKAXD1RxKwGBwA7UALr8MRT+yMlDf3cSaRwt7aZlnsJUZuMQB7WgAbw==
+  </data>
+ </layer>
+ <layer name="ui_layer" width="17" height="17">
+  <data encoding="base64" compression="zlib">
+   eJyNU4sKwzAINC20G33Qpayw///RJaD0uF3WBsRojHcaY2b2KZKKjHauVeyVL1bn+uW59iKb62r3rrPHPfz8DfZAue7qijmDjTyyiE2OnQTmAZz5LmtendgzbuR82tmnBNJ7Lf9wGb9lR4+x/xvpHWzkwrUrHOXnN5i9Vu5pzBzjIed6Z4B8V33gHquY1hwEP54H5FNrWUz35i4fjj3s9x3QzhQ3ihxXtuIVtcRchOAcxB9WfnyXSdQ3Nc6U/wu9kAWm
+  </data>
+ </layer>
+</map>

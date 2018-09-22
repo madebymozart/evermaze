@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="25" height="25" tilewidth="108" tileheight="108" infinite="0" nextobjectid="10">
+ <tileset firstgid="1" name="HuU8CDaMcCP5WClY" tilewidth="108" tileheight="108" tilecount="25" columns="5">
+  <image source="../../../tilesets/HuU8CDaMcCP5WClY.png" width="540" height="540"/>
+ </tileset>
+ <layer name="control_layer_two" width="25" height="25" opacity="0">
+  <data encoding="base64" compression="zlib">
+   eJztVNEOwjAIrC5xmrV1bi/+/5dqI5fcLqWr+uKDJA0bA3Yc0BBecn6eA51V3ltnpBzRnjPpZH5L2MoU+uUo2rPdCE8mexaNelfCfDHbTDlugj3Z98HsA+WZTZ8a+FiQW/29+qDBW6JYYEffRonhnOgH418c/5p4uLK89/rz7CnuFgccdzV934nTHL2++szx4L5wGR1f9HoOW96jxWvdOdQF3zGHzJnuk4cXdmDyuG/lAveY+ej4ezzwPumu1TjkunV2Z4pJlHuqxHuzCT5H57sK29Er3WdwpPee1oI+6u6WuVAuPPyo1dvBIH6tHu/tM9fJ/WDuavNZ+4fuRWsGe+2tfS5SeMV9rZgZix62Y/b0/uU9mES/Kz138bfyKba//I48AIMTBtQ=
+  </data>
+ </layer>
+ <layer name="control_layer_one" width="25" height="25" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMApGwXAAHEDMSACzQ9XyEdDHjibHA+UzEeEOJjQalz5s6kCAE487YJgNi1o2JDNg6pmhtACSWcS6gxDA509eItxLDEbWx4PGBgAJbwEW
+  </data>
+ </layer>
+</map>

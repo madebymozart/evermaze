@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>data</key>
+    <array>
+      <dict>
+        <key>name</key>
+        <string>controls_layer_one</string>
+        <key>layer</key>
+        <string>controls_layer_one</string>
+        <key>inverse</key>
+        <true/>
+        <key>collisions</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>controls_layer_two</string>
+        <key>layer</key>
+        <string>controls_layer_two</string>
+        <key>inverse</key>
+        <true/>
+        <key>collisions</key>
+        <true/>
+      </dict>
+    </array>
+  </dict>
+</plist>
+

@@ -1,0 +1,9 @@
+# Pods for Evermaze-mobile
+target 'Evermaze-mobile' do
+  platform :ios, '9.0'
+  pod 'Firebase/Core'
+  pod 'Firebase/AdMob'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
+end

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="23" height="23" tilewidth="108" tileheight="108" nextobjectid="1">
+ <tileset firstgid="1" name="evermaze_Set" tilewidth="108" tileheight="108" tilecount="25" columns="5">
+  <image source="HuU8CDaMcCP5WClY.pvr.ccz" width="540" height="540"/>
+ </tileset>
+ <layer name="spawn_layer" width="23" height="23">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAtYEWjqWXeQAFc9g+0u2CAkDsGiztpBYaK/warO4l1F7o6evtnMITfYHDDYANDrfwZ7u6hh/8AszMAYA==
+  </data>
+ </layer>
+ <layer name="ui_layer" width="23" height="23">
+  <data encoding="base64" compression="zlib">
+   eJy1VIsKwjAM3BQ2BafVMdH//1FX6MF5JGmdGihpk7S5PJqu+y+dC5/W1a9rLrw3zpFulPcy7cRXdG7RsewofqF7FnkijHl/KvqD6AbHP8uuxf62MR7eIz/Ar/6hh0+OQfeKyYqB5VYeW2sAPKj5KPK94OE8c5yIL6qv5jvCb+G1cOtbnhx1WSgO7ifEsQV3hFMJb8Ev3rx37/kG136G3Tf/MuqNmp32ORbwpoJ3lhhGuWf1d63+mXL+Ls59z57xAQfqP9A50dL5o/YW7lpfeJh0/rCNzhEPj/4/5S190trXkb03v/UPTXLO93gG6l/7BI/aeXuWAU+q8N44W/uHgfvX9AJtIgc5
+  </data>
+ </layer>
+</map>

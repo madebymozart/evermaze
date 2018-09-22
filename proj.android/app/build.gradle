@@ -1,0 +1,144 @@
+import org.gradle.internal.os.OperatingSystem
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion PROP_TARGET_SDK_VERSION.toInteger()
+    buildToolsVersion PROP_BUILD_TOOLS_VERSION
+
+    defaultConfig {
+        applicationId "com.prodbymozart.evermaze"
+        minSdkVersion PROP_MIN_SDK_VERSION
+        targetSdkVersion PROP_TARGET_SDK_VERSION
+        versionCode 1
+        versionName "0.1"
+        multiDexEnabled true
+
+        externalNativeBuild {
+            ndkBuild {
+                targets 'evermaze'
+                arguments 'NDK_TOOLCHAIN_VERSION=clang'
+                arguments '-j' + Runtime.runtime.availableProcessors()
+            }
+        }
+
+        ndk {
+            abiFilters = []
+            abiFilters.addAll(PROP_APP_ABI.split(':').collect { it as String })
+        }
+    }
+
+    sourceSets.main {
+        java.srcDir "src"
+        res.srcDir "res"
+        manifest.srcFile "AndroidManifest.xml"
+        assets.srcDir "../../Resources"
+    }
+
+    externalNativeBuild {
+        ndkBuild {
+            path "jni/Android.mk"
+        }
+    }
+
+    buildTypes {
+        release {
+            debuggable false
+            jniDebuggable false
+            renderscriptDebuggable false
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            proguardFiles file('firebase-rules/admob.pro')
+            proguardFiles file('firebase-rules/analytics.pro')
+            proguardFiles file('firebase-rules/app.pro')
+            proguardFiles file('firebase-rules/auth.pro')
+            proguardFiles file('firebase-rules/database.pro')
+            proguardFiles file('firebase-rules/dynamic_links.pro')
+            proguardFiles file('firebase-rules/instance_id.pro')
+            proguardFiles file('firebase-rules/invites.pro')
+            proguardFiles file('firebase-rules/messaging.pro')
+            proguardFiles file('firebase-rules/remote_config.pro')
+            proguardFiles file('firebase-rules/storage.pro')
+
+            // signingConfig signingConfigs.release
+
+            externalNativeBuild {
+                ndkBuild {
+                    arguments 'NDK_DEBUG=0'
+                }
+            }
+        }
+
+        debug {
+            debuggable true
+            jniDebuggable true
+            renderscriptDebuggable true
+            minifyEnabled false
+            useProguard false
+
+            externalNativeBuild {
+                ndkBuild {
+                    arguments 'NDK_DEBUG=1'
+                }
+            }
+        }
+    }
+}
+
+android.applicationVariants.all { variant ->
+    // Run encrypt scripts
+    if (OperatingSystem.current().isWindows()) {
+        exec {
+            executable System.getProperty("user.dir") + "\\..\\xEncrypt\\win.bat"
+        }
+    } else if (OperatingSystem.current().isMacOsX()) {
+        exec {
+            executable "../../xEncrypt/mac.sh"
+        }
+    } else if (OperatingSystem.current().isLinux()) {
+        exec {
+            executable "../../xEncrypt/linux.sh"
+        }
+    }
+
+    // Delete previous files first
+    delete "${buildDir}/intermediates/assets/${variant.dirName}"
+
+    variant.mergeAssets.doLast {
+        copy {
+            from "${buildDir}/../../../Resources"
+            into "${buildDir}/intermediates/assets/${variant.dirName}"
+            exclude "**/*.gz"
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':libcocos2dx')
+
+    // Android Support
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation('com.android.support:appcompat-v7:27.1.1') {
+        exclude group: 'com.android.support', module: 'animated-vector-drawable'
+        exclude group: 'com.android.support', module: 'customtabs'
+    }
+
+    // Facebook
+    implementation 'com.facebook.android:facebook-login:4.33.0'
+
+    // Google Play Services
+    implementation 'com.google.android.gms:play-services-base:15.0.1'
+
+    // Firebase
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+    implementation 'com.google.firebase:firebase-ads:15.0.1'
+    implementation 'com.google.firebase:firebase-auth:16.0.2'
+    implementation 'com.google.firebase:firebase-analytics:16.0.1'
+    implementation 'com.google.firebase:firebase-database:16.0.1'
+    implementation 'com.google.firebase:firebase-config:16.0.0'
+}
+
+apply plugin: 'com.google.gms.google-services'

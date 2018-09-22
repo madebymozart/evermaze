@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "646750535238",
+    "firebase_url": "https://evermaze-prodbymozart.firebaseio.com",
+    "project_id": "evermaze-prodbymozart",
+    "storage_bucket": "evermaze-prodbymozart.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646750535238:android:757ae63708fbe0b7",
+        "android_client_info": {
+          "package_name": "com.prodbymozart.evermaze"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "646750535238-chduinavif2sth32e6gkk5ec4bulrc5m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.prodbymozart.evermaze",
+            "certificate_hash": "b3b49274065642f5a04aaceeb6f86c5f724daf67"
+          }
+        },
+        {
+          "client_id": "646750535238-qtceqaoqinhqtp0rirn58khfa7gk28vo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZnpUKn7hA4U_B-8Gd4Tb-pf4Ue-kES9k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "646750535238-qtceqaoqinhqtp0rirn58khfa7gk28vo.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "646750535238-7tuul5j1crcrln5bib4pnjgiv0a51p9g.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.prodbymozart.evermaze"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

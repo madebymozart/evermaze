@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{67ad76d1-d024-44d6-8da3-80a29310eb6f}">
+        <property name="assetPath">
+            <value>Music/Moon Ray.flac</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>96</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>140.08533333333332</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{bac6f5d5-6dac-484f-a4b8-e8525e92b51e}</destination>
+        </relationship>
+    </object>
+</objects>

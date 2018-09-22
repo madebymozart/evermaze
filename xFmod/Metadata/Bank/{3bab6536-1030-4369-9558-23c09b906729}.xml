@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="MasterBank" id="{3bab6536-1030-4369-9558-23c09b906729}">
+        <property name="name">
+            <value>Evermaze</value>
+        </property>
+        <relationship name="folder">
+            <destination>{b1f56173-1ee0-4927-8c26-fc81a4d44a7e}</destination>
+        </relationship>
+    </object>
+</objects>

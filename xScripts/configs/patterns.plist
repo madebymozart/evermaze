@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>data</key>
+    <array>
+      <dict>
+        <key>id</key>
+        <string>evermaze_pattern</string>
+        <key>texture</key>
+        <string>Xk0z5V6vQMCAhBbJ</string>
+        <key>flip</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>id</key>
+        <string>star_field_pattern</string>
+        <key>texture</key>
+        <string>wKX0ofeXx8mu0Ao1</string>
+        <key>flip</key>
+        <true/>
+      </dict>
+      <dict>
+        <key>id</key>
+        <string>poly_brinke_pattern</string>
+        <key>texture</key>
+        <string>utvbSOQKAfbx9Pzz</string>
+      </dict>
+    </array>
+  </dict>
+</plist>

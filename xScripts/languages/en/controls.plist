@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>controls_controls</key>
+    <string>Controls</string>
+    <key>controls_reverse_swipe</key>
+    <string>Reverse</string>
+    <key>controls_skip</key>
+    <string>Skip</string>
+    <key>controls_swipe_to_move</key>
+    <string>Swipe to move</string>
+    <key>controls_swipe_to_move_description</key>
+    <string>Swipe anywhere to move. Click "Reverse" to invert swiping</string>
+    <key>controls_exit</key>
+    <string>This is the exit</string>
+    <key>controls_exit_description</key>
+    <string>Most levels will have one. Find it to complete the level</string>
+    <key>controls_beware</key>
+    <string>Beware of Llurkers!</string>
+    <key>controls_beware_description</key>
+    <string>They are extremely dangerous! Find the exit before they find you!</string>
+  </dict>
+</plist>
+

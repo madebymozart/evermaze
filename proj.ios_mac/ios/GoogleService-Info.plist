@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>646750535238-7tuul5j1crcrln5bib4pnjgiv0a51p9g.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.646750535238-7tuul5j1crcrln5bib4pnjgiv0a51p9g</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA12dK-mX7J6kndtC-xrEuPX3F3sQZAnFI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>646750535238</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.prodbymozart.evermaze</string>
+	<key>PROJECT_ID</key>
+	<string>evermaze-prodbymozart</string>
+	<key>STORAGE_BUCKET</key>
+	<string>evermaze-prodbymozart.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:646750535238:ios:757ae63708fbe0b7</string>
+	<key>DATABASE_URL</key>
+	<string>https://evermaze-prodbymozart.firebaseio.com</string>
+</dict>
+</plist>

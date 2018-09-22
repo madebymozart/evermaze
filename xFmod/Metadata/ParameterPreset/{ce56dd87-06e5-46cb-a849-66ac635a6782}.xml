@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{ce56dd87-06e5-46cb-a849-66ac635a6782}">
+        <property name="name">
+            <value>fullLoop</value>
+        </property>
+        <relationship name="folder">
+            <destination>{d0cc4241-6ca4-41f2-a918-f651a4ddb689}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{f848bdb3-e38a-4090-91ce-ec8491238d67}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{f848bdb3-e38a-4090-91ce-ec8491238d67}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>

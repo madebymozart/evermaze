@@ -1,0 +1,180 @@
+########## General ##########
+/bin
+/xTexturePacker/ignore
+/Resources/*.archive
+
+########## VS Code / Visual Studio ##########
+*.db
+*.opendb
+*.pdb
+*.suo
+*.TMP
+.vscode/launch.json
+.vs/
+*.vs
+.vs
+proj.win32/Debug.win32
+*.log
+cocos2d/cocos/2d/Debug.win32
+cocos2d/cocos/editor-support/spine/proj.win32/Debug.win32
+cocos2d/external/Box2D/proj.win32/Debug.win32
+cocos2d/external/recast/proj.win32/Debug.win32
+cocos2d/external/bullet/proj.win32/Debug.win32
+cocos2d/cocos/Debug.win32
+cocos2d/cocos/editor-support/spine/Debug.win32
+cocos2d/external/Box2D/Debug.*/
+cocos2d/external/recast/Debug.*/
+cocos2d/external/bullet/Debug.*/
+########## VS Code / Visual Studio ##########
+
+########## CLion ##########
+.idea/
+
+########## Android (Android Studio) ############
+cocos2d/cocos/platform/android/libcocos2dx/build
+cocos2d/cocos/platform/android/libcocos2dx/libcocos2dx.iml
+
+######### Android (Android Studio) ############
+
+######### Mac / iOS / Xcode ##########
+## Build generated
+DerivedData/
+cocos2d/build/build/
+proj.ios_mac/evermaze.xcodeproj/project.xcworkspace/
+.DS_Store
+proj.ios_mac/build/
+proj.ios_mac/Pods/
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+######### Mac / iOS / Xcode ##########
+
+######### Linux #########
+linux-build/
+cmake-build-debug/
+
+# OSX - https://github.com/github/gitignore/blob/master/Global/OSX.gitignore
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+
+# Windows - https://github.com/github/gitignore/blob/master/Global/Windows.gitignore
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+
+# cocos studio
+*.udf
+
+# proj.android
+bin/
+proj.android/assets/
+proj.android/bin/
+proj.android/gen/
+proj.android/libs/
+proj.android/local.properties
+proj.android/obj/
+cocos2d/cocos/platform/android/java/bin/
+cocos2d/cocos/platform/android/java/gen/
+cocos2d/cocos/platform/android/java/local.properties
+cocos2d/cocos/platform/android/java/res/
+.metadata/
+.recommenders/
+
+# proj.android-studio
+*.iml
+proj.android-studio/app/assets/
+proj.android-studio/app/obj/
+proj.android-studio/app/libs/armeabi/
+#proj.android-studio/app/gradle.properties
+proj.android-studio/app/local.properties
+proj.android-studio/*/build/
+cocos2d/cocos/platform/android/libcocos2dx/build/
+
+# proj.ios_mac
+cocos2d/build/build/
+cocos2d/build/cocos2d_libs.xcodeproj/xcuserdata/
+proj.ios_mac/build/
+proj.ios_mac/*.xcodeproj/project.xcworkspace
+proj.ios_mac/*.xcodeproj/xcuserdata/
+!*.pch
+
+# proj.linux
+
+# proj.win32
+cocos2d/cocos/2d/Debug.*/
+cocos2d/cocos/editor-support/spine/proj.win32/Debug.*/
+cocos2d/external/Box2D/proj.win32/Debug.*/
+cocos2d/external/bullet/proj.win32/Debug.*/
+cocos2d/external/recast/proj.win32/Debug.*/
+cocos2d/cocos/2d/Release.*/
+cocos2d/cocos/editor-support/spine/proj.win32/Release.*/
+cocos2d/external/Box2D/proj.win32/Release.*/
+cocos2d/external/bullet/proj.win32/Release.*/
+cocos2d/external/recast/proj.win32/Release.*/
+proj.win/*.sdf
+proj.win/*.opensdf
+proj.win/Debug.*/
+proj.win/Release.*/
+
+# proj.win8.1-universal
+
+# others
+xLibraries/review/android/plugin_review_res_project/src/
+xLibraries/review/android/plugin_review_res_project/build/
+xLibraries/review/android/plugin_review_res_project/.classpath
+xLibraries/review/android/plugin_review_res_project/.project
+xLibraries/facebook/android/facebook_lib/build/
+xLibraries/gps/build/
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>actions</key>
+	<array>
+		<dict>
+			<key>delay</key>
+			<real>0</real>
+			<key>duration</key>
+			<real>0.3</real>
+			<key>name</key>
+			<string>fadein</string>
+		</dict>
+		<dict>
+			<key>delay</key>
+			<real>0.9</real>
+			<key>duration</key>
+			<real>0.7</real>
+			<key>name</key>
+			<string>zoom</string>
+			<key>scale</key>
+			<real>0.58</real>
+			<key>rate</key>
+			<real>3.5</real>
+		</dict>
+		<dict>
+			<key>delay</key>
+			<real>0.9</real>
+			<key>duration</key>
+			<real>0.7</real>
+			<key>name</key>
+			<string>easeinout</string>
+			<key>pos_x</key>
+			<real>2</real>
+			<key>pos_y</key>
+			<real>1.15</real>
+			<key>rate</key>
+			<real>3.5</real>
+		</dict>
+	</array>
+	<key>name</key>
+	<string>spawn</string>
+</dict>
+</plist>

@@ -1,0 +1,29 @@
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := fmodstudioL
+LOCAL_MODULE_FILENAME := libfmodstudioL
+LOCAL_SRC_FILES := $(TARGET_ARCH_ABI)/libfmodstudioL.so
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/../include
+include $(PREBUILT_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := fmodL
+LOCAL_MODULE_FILENAME := libfmodL
+LOCAL_SRC_FILES := $(TARGET_ARCH_ABI)/libfmodL.so
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/../include
+include $(PREBUILT_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := fmodstudio
+LOCAL_MODULE_FILENAME := libfmodstudio
+LOCAL_SRC_FILES := $(TARGET_ARCH_ABI)/libfmodstudio.so
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/../include
+include $(PREBUILT_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := fmod
+LOCAL_MODULE_FILENAME := libfmod
+LOCAL_SRC_FILES := $(TARGET_ARCH_ABI)/libfmod.so
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/../include
+include $(PREBUILT_SHARED_LIBRARY)

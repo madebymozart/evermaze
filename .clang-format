@@ -1,0 +1,5 @@
+# Use the Google style in this project.
+BasedOnStyle: Google
+
+# Use 110 columns
+ColumnLimit: 110

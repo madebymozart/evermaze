@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\app">
+      <UniqueIdentifier>{d127bb73-d77f-4389-8faa-c539bfabe516}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\managers">
+      <UniqueIdentifier>{18b6ea17-cb21-45c0-8d65-12775e35a964}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\managers\menu">
+      <UniqueIdentifier>{8946baf7-ecf4-4e3a-96a3-800fd5058008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\managers\text">
+      <UniqueIdentifier>{dff07b12-aa46-40b2-8567-cd8c7a540424}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\managers\sprite">
+      <UniqueIdentifier>{5ed3871a-3879-41b1-977a-a60372757dca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utils">
+      <UniqueIdentifier>{33ea14e9-e9b6-4d89-9602-53c61294b00f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utils\action">
+      <UniqueIdentifier>{fa040a6e-0e33-445d-ae15-58df3ea414f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utils\archive">
+      <UniqueIdentifier>{4f52445f-1a25-44fb-9983-6e5803a66288}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utils\thread">
+      <UniqueIdentifier>{64ac3c9c-e8f2-4327-9426-060367afbc87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\scenes">
+      <UniqueIdentifier>{a927386f-8491-435d-a124-b91af594087b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\layers">
+      <UniqueIdentifier>{ce49b13e-89ab-4f7c-be9b-b7bef7d4cd2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\layers\background">
+      <UniqueIdentifier>{4319749b-f3eb-4273-8cde-b08420d9b8d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utils\particle">
+      <UniqueIdentifier>{256e435f-6ceb-4169-84b7-ab0f32a0898d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utils\scene">
+      <UniqueIdentifier>{c218f149-a8b0-4921-b21c-fb7a3a2ad514}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\scenes\intro">
+      <UniqueIdentifier>{3782b84e-98b5-46f6-b367-f6e28c302c14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\engines">
+      <UniqueIdentifier>{c7de09b8-99a4-4b03-adbc-0e1ab1fd9ee9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\engines\fmod">
+      <UniqueIdentifier>{339991c3-c9a2-402a-9b7f-854c93ec11cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sqleet">
+      <UniqueIdentifier>{430c72ea-6700-4656-b4f3-37530b76421e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utils\data">
+      <UniqueIdentifier>{c84cd12b-0120-42d4-82f9-593291751142}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\engines\firebase">
+      <UniqueIdentifier>{9bb11576-5bf7-48ae-9d4a-a8e3ca93d712}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\scenes\modes">
+      <UniqueIdentifier>{896d02d4-db01-47dd-af67-1752c4418ebc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\engines\language">
+      <UniqueIdentifier>{503dd159-f9b0-4b5d-98cc-9e6125a4d179}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\objects">
+      <UniqueIdentifier>{515d42da-62f4-4ba9-975f-a15c23775f82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\objects\tmx">
+      <UniqueIdentifier>{9ac185c0-4c21-4521-822e-cb671f00f699}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\engines\tmx">
+      <UniqueIdentifier>{6679c4b0-8a1a-473a-9a40-4aa52331cdf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\scenes\game">
+      <UniqueIdentifier>{f67f258c-f9ed-4a09-a902-ed901c30d0e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\scenes\game\controls">
+      <UniqueIdentifier>{6943901c-7f95-4797-82f8-d90622884f80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\entities">
+      <UniqueIdentifier>{b1c5976d-ede4-47de-833c-c8e0e4123a61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\objects\decimal">
+      <UniqueIdentifier>{79333a49-9025-4e9e-b222-7d311c72452b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gestures">
+      <UniqueIdentifier>{90dad830-2dee-488f-9ff4-9a739b8a525e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gestures\swipe">
+      <UniqueIdentifier>{134e5c62-326f-4d98-af21-6e2537409be4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gestures\tap">
+      <UniqueIdentifier>{e036d359-b01c-4681-a4c3-05c3ad163363}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\entities\llumas">
+      <UniqueIdentifier>{7444e1d7-9495-4111-affb-216e5f89e8e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\entities\llumas\ivory">
+      <UniqueIdentifier>{625d12e1-aac7-49cb-8294-e3f0d14bbdfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utils\path">
+      <UniqueIdentifier>{296440b1-be4c-4f65-a1b8-3f3f5566ffba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\entities\llurkers">
+      <UniqueIdentifier>{257b4c46-78d2-4e14-ac68-f1f3022ff30a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\entities\llurkers\ximois">
+      <UniqueIdentifier>{24e1c856-8604-4fa5-bd42-8df9df37a662}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\scenes\levels">
+      <UniqueIdentifier>{60c5c341-3928-4c07-975b-0c90e650b1ca}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\app\app_delegate.cxx">
+      <Filter>src\app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\managers\base_manager.cxx">
+      <Filter>src\managers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\managers\text\text_manager.cxx">
+      <Filter>src\managers\text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\managers\sprite\sprite_manager.cxx">
+      <Filter>src\managers\sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\managers\menu\menu_manager.cxx">
+      <Filter>src\managers\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\action\action_utils.cxx">
+      <Filter>src\utils\action</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\thread\thread_utils.cxx">
+      <Filter>src\utils\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\archive\archive_utils.cxx">
+      <Filter>src\utils\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\scenes\base_scene.cxx">
+      <Filter>src\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\layers\background\background_layer.cxx">
+      <Filter>src\layers\background</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\particle\particle_utils.cxx">
+      <Filter>src\utils\particle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\scene\scene_utils.cxx">
+      <Filter>src\utils\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\scenes\intro\intro_scene.cxx">
+      <Filter>src\scenes\intro</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\engines\fmod\fmod_engine.cxx">
+      <Filter>src\engines\fmod</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\sqleet\sqleet.c">
+      <Filter>src\sqleet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\data\data_utils.cxx">
+      <Filter>src\utils\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\engines\firebase\firebase_engine.cxx">
+      <Filter>src\engines\firebase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\scenes\modes\modes_scene.cxx">
+      <Filter>src\scenes\modes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\engines\language\language_engine.cxx">
+      <Filter>src\engines\language</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\objects\tmx\tmx_object.cxx">
+      <Filter>src\objects\tmx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\engines\tmx\tmx_engine.cxx">
+      <Filter>src\engines\tmx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\scenes\game\base_game_scene.cxx">
+      <Filter>src\scenes\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\scenes\game\controls\controls_game_scene.cxx">
+      <Filter>src\scenes\game\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\entities\base_entity.cxx">
+      <Filter>src\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gestures\base_gesture.cxx">
+      <Filter>src\gestures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gestures\swipe\swipe_gesture.cxx">
+      <Filter>src\gestures\swipe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gestures\tap\tap_gesture.cxx">
+      <Filter>src\gestures\tap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\entities\llumas\ivory\ivory_lluma.cxx">
+      <Filter>src\entities\llumas\ivory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\entities\llumas\base_lluma.cxx">
+      <Filter>src\entities\llumas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\path\path_utils.cxx">
+      <Filter>src\utils\path</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\entities\llurkers\base_llurker.cxx">
+      <Filter>src\entities\llurkers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\entities\llurkers\ximois\ximois_llurker.cxx">
+      <Filter>src\entities\llurkers\ximois</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\scenes\levels\levels_scene.cxx">
+      <Filter>src\scenes\levels</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\enums.hxx">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\globals.hxx">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\app\app_delegate.hxx">
+      <Filter>src\app</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\constants.hxx">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\managers\base_manager.hxx">
+      <Filter>src\managers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\managers\text\text_manager.hxx">
+      <Filter>src\managers\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\managers\sprite\sprite_manager.hxx">
+      <Filter>src\managers\sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\managers\menu\menu_manager.hxx">
+      <Filter>src\managers\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\action\action_utils.hxx">
+      <Filter>src\utils\action</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\thread\thread_utils.hxx">
+      <Filter>src\utils\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\archive\archive_utils.hxx">
+      <Filter>src\utils\archive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\scenes\base_scene.hxx">
+      <Filter>src\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\layers\background\background_layer.hxx">
+      <Filter>src\layers\background</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\particle\particle_utils.hxx">
+      <Filter>src\utils\particle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\scene\scene_utils.hxx">
+      <Filter>src\utils\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\scenes\intro\intro_scene.hxx">
+      <Filter>src\scenes\intro</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\engines\fmod\fmod_engine.hxx">
+      <Filter>src\engines\fmod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\sqleet\sqleet.h">
+      <Filter>src\sqleet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\data\data_utils.hxx">
+      <Filter>src\utils\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\engines\firebase\firebase_engine.hxx">
+      <Filter>src\engines\firebase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\scenes\modes\modes_scene.hxx">
+      <Filter>src\scenes\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\engines\language\language_engine.hxx">
+      <Filter>src\engines\language</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\objects\tmx\tmx_object.hxx">
+      <Filter>src\objects\tmx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\engines\tmx\tmx_engine.hxx">
+      <Filter>src\engines\tmx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\scenes\game\base_game_scene.hxx">
+      <Filter>src\scenes\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\scenes\game\controls\controls_game_scene.hxx">
+      <Filter>src\scenes\game\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\entities\base_entity.hxx">
+      <Filter>src\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\objects\decimal\decimal_object.hxx">
+      <Filter>src\objects\decimal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gestures\base_gesture.hxx">
+      <Filter>src\gestures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gestures\swipe\swipe_gesture.hxx">
+      <Filter>src\gestures\swipe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gestures\tap\tap_gesture.hxx">
+      <Filter>src\gestures\tap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\entities\llumas\base_lluma.hxx">
+      <Filter>src\entities\llumas</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\entities\llumas\ivory\ivory_lluma.hxx">
+      <Filter>src\entities\llumas\ivory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\path\path_utils.hxx">
+      <Filter>src\utils\path</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\macros.hxx">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\entities\llurkers\base_llurker.hxx">
+      <Filter>src\entities\llurkers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\entities\llurkers\ximois\ximois_llurker.hxx">
+      <Filter>src\entities\llurkers\ximois</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\scenes\levels\levels_scene.hxx">
+      <Filter>src\scenes\levels</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

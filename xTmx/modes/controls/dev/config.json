@@ -1,0 +1,19 @@
+{  
+ "tmx_gid_mapper":{  
+   "gid_bottom_left":7,
+   "gid_bottom_right":8,
+   "gid_cross":3,
+   "gid_end_down":11,
+   "gid_end_left":12,
+   "gid_end_right":13,
+   "gid_end_up":14,
+   "gid_horizontal":1,
+   "gid_horizontal_down":19,
+   "gid_horizontal_up":16,
+   "gid_vertical":2,
+   "gid_vertical_left":18,
+   "gid_vertical_right":17,
+   "gid_up_left":6,
+   "gid_up_right":9
+ }
+}

@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{76A39BB2-9B84-4C65-98A5-654D86B86F2A}</ProjectGuid>
+    <RootNamespace>test_win32</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v140_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v141_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v140_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v141_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2dx.props" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2dx.props" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(EngineRoot);$(EngineRoot)external;$(EngineRoot)cocos\audio\include;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)external\win32-specific\zlib\include;$(EngineRoot)extensions;..\xLibraries\firebase\include;..\xLibraries\fmod\win32\include;..\Classes;..;%(AdditionalIncludeDirectories);$(_COCOS_HEADER_WIN32_BEGIN);$(_COCOS_HEADER_WIN32_END)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;COCOS2D_DEBUG=1;SQLITE_HAS_CODEC;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies);$(_COCOS_LIB_WIN32_BEGIN);$(_COCOS_LIB_WIN32_END);advapi32.lib;ws2_32.lib;crypt32.lib;iphlpapi.lib;psapi.lib;userenv.lib;libcurl.lib;fmodL_vc.lib;fmodstudioL_vc.lib;firebase_app.lib;firebase_admob.lib;firebase_analytics.lib;firebase_auth.lib;firebase_database.lib;firebase_dynamic_links.lib;firebase_instance_id.lib;firebase_invites.lib;firebase_messaging.lib;firebase_remote_config.lib;firebase_storage.lib</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);..\xLibraries\firebase\prebuilt\win32;..\xLibraries\fmod\win32\prebuilt;%(AdditionalLibraryDirectories);$(_COCOS_LIB_PATH_WIN32_BEGIN);$(_COCOS_LIB_PATH_WIN32_END)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy ..\xLibraries\fmod\win32\prebuilt\fmodL.dll $(OutDir)
+copy ..\xLibraries\fmod\win32\prebuilt\fmodstudioL.dll $(OutDir)</Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <CustomBuildStep>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
+      </Command>
+      <Outputs>$(TargetName).cab</Outputs>
+      <Inputs>$(TargetFileName)</Inputs>
+    </CustomBuildStep>
+    <PreBuildEvent>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\xEncrypt\win.bat</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(EngineRoot);$(EngineRoot)external;$(EngineRoot)cocos\audio\include;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;..\Classes;..;%(AdditionalIncludeDirectories);$(_COCOS_HEADER_WIN32_BEGIN);$(_COCOS_HEADER_WIN32_END)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libcurl.lib;%(AdditionalDependencies);$(_COCOS_LIB_WIN32_BEGIN);$(_COCOS_LIB_WIN32_END)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories);$(_COCOS_LIB_PATH_WIN32_BEGIN);$(_COCOS_LIB_PATH_WIN32_END)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\app\app_delegate.cxx" />
+    <ClCompile Include="..\Classes\engines\firebase\firebase_engine.cxx" />
+    <ClCompile Include="..\Classes\engines\fmod\fmod_engine.cxx" />
+    <ClCompile Include="..\Classes\engines\language\language_engine.cxx" />
+    <ClCompile Include="..\Classes\engines\tmx\tmx_engine.cxx" />
+    <ClCompile Include="..\Classes\entities\base_entity.cxx" />
+    <ClCompile Include="..\Classes\entities\llumas\base_lluma.cxx" />
+    <ClCompile Include="..\Classes\entities\llumas\ivory\ivory_lluma.cxx" />
+    <ClCompile Include="..\Classes\entities\llurkers\base_llurker.cxx" />
+    <ClCompile Include="..\Classes\entities\llurkers\ximois\ximois_llurker.cxx" />
+    <ClCompile Include="..\Classes\gestures\base_gesture.cxx" />
+    <ClCompile Include="..\Classes\gestures\swipe\swipe_gesture.cxx" />
+    <ClCompile Include="..\Classes\gestures\tap\tap_gesture.cxx" />
+    <ClCompile Include="..\Classes\layers\background\background_layer.cxx" />
+    <ClCompile Include="..\Classes\managers\base_manager.cxx" />
+    <ClCompile Include="..\Classes\managers\menu\menu_manager.cxx" />
+    <ClCompile Include="..\Classes\managers\sprite\sprite_manager.cxx" />
+    <ClCompile Include="..\Classes\managers\text\text_manager.cxx" />
+    <ClCompile Include="..\Classes\objects\tmx\tmx_object.cxx" />
+    <ClCompile Include="..\Classes\scenes\base_scene.cxx" />
+    <ClCompile Include="..\Classes\scenes\game\base_game_scene.cxx" />
+    <ClCompile Include="..\Classes\scenes\game\controls\controls_game_scene.cxx" />
+    <ClCompile Include="..\Classes\scenes\intro\intro_scene.cxx" />
+    <ClCompile Include="..\Classes\scenes\levels\levels_scene.cxx" />
+    <ClCompile Include="..\Classes\scenes\modes\modes_scene.cxx" />
+    <ClCompile Include="..\Classes\sqleet\sqleet.c" />
+    <ClCompile Include="..\Classes\utils\action\action_utils.cxx" />
+    <ClCompile Include="..\Classes\utils\archive\archive_utils.cxx" />
+    <ClCompile Include="..\Classes\utils\data\data_utils.cxx" />
+    <ClCompile Include="..\Classes\utils\particle\particle_utils.cxx" />
+    <ClCompile Include="..\Classes\utils\path\path_utils.cxx" />
+    <ClCompile Include="..\Classes\utils\scene\scene_utils.cxx" />
+    <ClCompile Include="..\Classes\utils\thread\thread_utils.cxx" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\app\app_delegate.hxx" />
+    <ClInclude Include="..\Classes\constants.hxx" />
+    <ClInclude Include="..\Classes\engines\firebase\firebase_engine.hxx" />
+    <ClInclude Include="..\Classes\engines\fmod\fmod_engine.hxx" />
+    <ClInclude Include="..\Classes\engines\language\language_engine.hxx" />
+    <ClInclude Include="..\Classes\engines\tmx\tmx_engine.hxx" />
+    <ClInclude Include="..\Classes\entities\base_entity.hxx" />
+    <ClInclude Include="..\Classes\entities\llumas\base_lluma.hxx" />
+    <ClInclude Include="..\Classes\entities\llumas\ivory\ivory_lluma.hxx" />
+    <ClInclude Include="..\Classes\entities\llurkers\base_llurker.hxx" />
+    <ClInclude Include="..\Classes\entities\llurkers\ximois\ximois_llurker.hxx" />
+    <ClInclude Include="..\Classes\enums.hxx" />
+    <ClInclude Include="..\Classes\gestures\base_gesture.hxx" />
+    <ClInclude Include="..\Classes\gestures\swipe\swipe_gesture.hxx" />
+    <ClInclude Include="..\Classes\gestures\tap\tap_gesture.hxx" />
+    <ClInclude Include="..\Classes\globals.hxx" />
+    <ClInclude Include="..\Classes\layers\background\background_layer.hxx" />
+    <ClInclude Include="..\Classes\macros.hxx" />
+    <ClInclude Include="..\Classes\managers\base_manager.hxx" />
+    <ClInclude Include="..\Classes\managers\menu\menu_manager.hxx" />
+    <ClInclude Include="..\Classes\managers\sprite\sprite_manager.hxx" />
+    <ClInclude Include="..\Classes\managers\text\text_manager.hxx" />
+    <ClInclude Include="..\Classes\objects\decimal\decimal_object.hxx" />
+    <ClInclude Include="..\Classes\objects\tmx\tmx_object.hxx" />
+    <ClInclude Include="..\Classes\scenes\base_scene.hxx" />
+    <ClInclude Include="..\Classes\scenes\game\base_game_scene.hxx" />
+    <ClInclude Include="..\Classes\scenes\game\controls\controls_game_scene.hxx" />
+    <ClInclude Include="..\Classes\scenes\intro\intro_scene.hxx" />
+    <ClInclude Include="..\Classes\scenes\levels\levels_scene.hxx" />
+    <ClInclude Include="..\Classes\scenes\modes\modes_scene.hxx" />
+    <ClInclude Include="..\Classes\sqleet\sqleet.h" />
+    <ClInclude Include="..\Classes\utils\action\action_utils.hxx" />
+    <ClInclude Include="..\Classes\utils\archive\archive_utils.hxx" />
+    <ClInclude Include="..\Classes\utils\data\data_utils.hxx" />
+    <ClInclude Include="..\Classes\utils\particle\particle_utils.hxx" />
+    <ClInclude Include="..\Classes\utils\path\path_utils.hxx" />
+    <ClInclude Include="..\Classes\utils\scene\scene_utils.hxx" />
+    <ClInclude Include="..\Classes\utils\thread\thread_utils.hxx" />
+    <ClInclude Include="main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\cocos2d\cocos\2d\libcocos2d.vcxproj">
+      <Project>{98a51ba8-fc3a-415b-ac8f-8c7bd464e93e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\cocos2d\cocos\editor-support\spine\proj.win32\libSpine.vcxproj">
+      <Project>{b7c2a162-dec9-4418-972e-240ab3cbfcae}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\cocos2d\external\Box2D\proj.win32\libbox2d.vcxproj">
+      <Project>{929480e7-23c0-4df6-8456-096d71547116}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
