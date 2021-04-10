@@ -7,7 +7,7 @@ $(call import-add-path,$(LOCAL_PATH)/../../../cocos2d/external)
 $(call import-add-path,$(LOCAL_PATH)/../../../cocos2d/cocos)
 $(call import-add-path,$(LOCAL_PATH)/../../../cocos2d/cocos/audio/include)
 
-LOCAL_MODULE := evermaze_shared
+LOCAL_MODULE := evermaze
 
 LOCAL_MODULE_FILENAME := libevermaze
 
