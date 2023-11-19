@@ -1,4 +1,4 @@
-package com.enhance.gameservice;
+package org.cocos2dx.lib;
 
 interface IGameTuningService
 {

@@ -22,7 +22,7 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  THE SOFTWARE.
  ****************************************************************************/
-package com.prodbymozart.evermaze;
+package com.madebymozart.evermaze;
 
 import android.os.Bundle;
 

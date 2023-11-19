@@ -28,7 +28,7 @@ $(LOCAL_PATH)/../../../Classes/gestures/base_gesture.cxx \
 $(LOCAL_PATH)/../../../Classes/layers/background/background_layer.cxx \
 $(LOCAL_PATH)/../../../Classes/managers/menu/menu_manager.cxx \
 $(LOCAL_PATH)/../../../Classes/managers/sprite/sprite_manager.cxx \
-$(LOCAL_PATH)/../../../Classes/managers/text/text_manager.cxx \
+$(LOCAL_PATH)/../../../Classes/managers/text /text_manager.cxx \
 $(LOCAL_PATH)/../../../Classes/managers/base_manager.cxx \
 $(LOCAL_PATH)/../../../Classes/objects/tmx/tmx_object.cxx \
 $(LOCAL_PATH)/../../../Classes/scenes/game/controls/controls_game_scene.cxx \

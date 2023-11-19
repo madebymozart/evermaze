@@ -11,12 +11,13 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Message;
 import android.preference.PreferenceManager.OnActivityResultListener;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import org.cocos2dx.lib.Cocos2dxHelper.Cocos2dxHelperListener;
 
@@ -34,10 +35,10 @@ public abstract class Cocos2dxActivity extends AppCompatActivity implements Coco
     // ===========================================================
     // Fields
     // ===========================================================
-    
+
     private Cocos2dxGLSurfaceView mGLSurfaceView = null;
     private int[] mGLContextAttrs = null;
-    private Cocos2dxHandler mHandler = null;   
+    private Cocos2dxHandler mHandler = null;
     private static Cocos2dxActivity sContext = null;
     private Cocos2dxVideoHelper mVideoHelper = null;
     private Cocos2dxWebViewHelper mWebViewHelper = null;
@@ -45,14 +46,14 @@ public abstract class Cocos2dxActivity extends AppCompatActivity implements Coco
     private boolean hasFocus = false;
     private boolean showVirtualButton = false;
 
-    public Cocos2dxGLSurfaceView getGLSurfaceView(){
-        return  mGLSurfaceView;
+    public Cocos2dxGLSurfaceView getGLSurfaceView() {
+        return mGLSurfaceView;
     }
 
     public static Context getContext() {
         return sContext;
     }
-    
+
     public void setKeepScreenOn(boolean value) {
         final boolean newValue = value;
         runOnUiThread(new Runnable() {
@@ -77,7 +78,7 @@ public abstract class Cocos2dxActivity extends AppCompatActivity implements Coco
             e.printStackTrace();
         }
     }
-    
+
     // ===========================================================
     // Constructors
     // ===========================================================
@@ -102,21 +103,21 @@ public abstract class Cocos2dxActivity extends AppCompatActivity implements Coco
 
         sContext = this;
         this.mHandler = new Cocos2dxHandler(this);
-        
+
         Cocos2dxHelper.init(this);
-        
+
         this.mGLContextAttrs = getGLContextAttrs();
         this.init();
 
         if (mVideoHelper == null) {
             mVideoHelper = new Cocos2dxVideoHelper(this, mFrameLayout);
         }
-        
-        if(mWebViewHelper == null){
+
+        if (mWebViewHelper == null) {
             mWebViewHelper = new Cocos2dxWebViewHelper(mFrameLayout);
         }
 
-        if(mEditBoxHelper == null){
+        if (mEditBoxHelper == null) {
             mEditBoxHelper = new Cocos2dxEditBoxHelper(mFrameLayout);
         }
 
@@ -142,42 +143,42 @@ public abstract class Cocos2dxActivity extends AppCompatActivity implements Coco
 
     @Override
     protected void onResume() {
-    	Log.d(TAG, "onResume()");
+        Log.d(TAG, "onResume()");
         super.onResume();
         Cocos2dxAudioFocusManager.registerAudioFocusListener(this);
         this.hideVirtualButton();
-       	resumeIfHasFocus();
+        resumeIfHasFocus();
 
         Cocos2dxEngineDataManager.resume();
     }
-    
+
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
-    	Log.d(TAG, "onWindowFocusChanged() hasFocus=" + hasFocus);
+        Log.d(TAG, "onWindowFocusChanged() hasFocus=" + hasFocus);
         super.onWindowFocusChanged(hasFocus);
-        
+
         this.hasFocus = hasFocus;
         resumeIfHasFocus();
     }
-    
+
     private void resumeIfHasFocus() {
-        if(hasFocus) {
+        if (hasFocus) {
             this.hideVirtualButton();
-        	Cocos2dxHelper.onResume();
-        	mGLSurfaceView.onResume();
+            Cocos2dxHelper.onResume();
+            mGLSurfaceView.onResume();
         }
     }
 
     @Override
     protected void onPause() {
-    	Log.d(TAG, "onPause()");
+        Log.d(TAG, "onPause()");
         super.onPause();
         Cocos2dxAudioFocusManager.unregisterAudioFocusListener(this);
         Cocos2dxHelper.onPause();
         mGLSurfaceView.onPause();
         Cocos2dxEngineDataManager.pause();
     }
-    
+
     @Override
     protected void onDestroy() {
         Cocos2dxAudioFocusManager.unregisterAudioFocusListener(this);
@@ -193,15 +194,14 @@ public abstract class Cocos2dxActivity extends AppCompatActivity implements Coco
         msg.obj = new Cocos2dxHandler.DialogMessage(pTitle, pMessage);
         this.mHandler.sendMessage(msg);
     }
-    
+
     @Override
     public void runOnGLThread(final Runnable pRunnable) {
         this.mGLSurfaceView.queueEvent(pRunnable);
     }
-    
+
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data)
-    {
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         for (OnActivityResultListener listener : Cocos2dxHelper.getOnActivityResultListeners()) {
             listener.onActivityResult(requestCode, resultCode, data);
         }
@@ -211,15 +211,16 @@ public abstract class Cocos2dxActivity extends AppCompatActivity implements Coco
 
 
     protected ResizeLayout mFrameLayout = null;
+
     // ===========================================================
     // Methods
     // ===========================================================
     public void init() {
-        
+
         // FrameLayout
         ViewGroup.LayoutParams framelayout_params =
-            new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
-                                       ViewGroup.LayoutParams.MATCH_PARENT);
+                new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+                        ViewGroup.LayoutParams.MATCH_PARENT);
 
         mFrameLayout = new ResizeLayout(this);
 
@@ -227,8 +228,8 @@ public abstract class Cocos2dxActivity extends AppCompatActivity implements Coco
 
         // Cocos2dxEditText layout
         ViewGroup.LayoutParams edittext_layout_params =
-            new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
-                                       ViewGroup.LayoutParams.WRAP_CONTENT);
+                new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+                        ViewGroup.LayoutParams.WRAP_CONTENT);
         Cocos2dxEditBox edittext = new Cocos2dxEditBox(this);
         edittext.setLayoutParams(edittext_layout_params);
 
@@ -253,11 +254,12 @@ public abstract class Cocos2dxActivity extends AppCompatActivity implements Coco
         setContentView(mFrameLayout);
     }
 
-    
+
     public Cocos2dxGLSurfaceView onCreateView() {
         Cocos2dxGLSurfaceView glSurfaceView = new Cocos2dxGLSurfaceView(this);
         //this line is need on some device if we specify an alpha bits
-        if(this.mGLContextAttrs[3] > 0) glSurfaceView.getHolder().setFormat(PixelFormat.TRANSLUCENT);
+        if (this.mGLContextAttrs[3] > 0)
+            glSurfaceView.getHolder().setFormat(PixelFormat.TRANSLUCENT);
 
         // use custom EGLConfigureChooser
         Cocos2dxEGLConfigChooser chooser = new Cocos2dxEGLConfigChooser(this.mGLContextAttrs);
@@ -301,85 +303,83 @@ public abstract class Cocos2dxActivity extends AppCompatActivity implements Coco
         }
     }
 
-   private static boolean isAndroidEmulator() {
-      String model = Build.MODEL;
-      Log.d(TAG, "model=" + model);
-      String product = Build.PRODUCT;
-      Log.d(TAG, "product=" + product);
-      boolean isEmulator = false;
-      if (product != null) {
-         isEmulator = product.equals("sdk") || product.contains("_sdk") || product.contains("sdk_");
-      }
-      Log.d(TAG, "isEmulator=" + isEmulator);
-      return isEmulator;
-   }
+    private static boolean isAndroidEmulator() {
+        String model = Build.MODEL;
+        Log.d(TAG, "model=" + model);
+        String product = Build.PRODUCT;
+        Log.d(TAG, "product=" + product);
+        boolean isEmulator = false;
+        if (product != null) {
+            isEmulator = product.equals("sdk") || product.contains("_sdk") || product.contains("sdk_");
+        }
+        Log.d(TAG, "isEmulator=" + isEmulator);
+        return isEmulator;
+    }
 
     // ===========================================================
     // Inner and Anonymous Classes
     // ===========================================================
 
-    private class Cocos2dxEGLConfigChooser implements GLSurfaceView.EGLConfigChooser
-    {
+    private class Cocos2dxEGLConfigChooser implements GLSurfaceView.EGLConfigChooser {
         private int[] mConfigAttributes;
-        private  final int EGL_OPENGL_ES2_BIT = 0x04;
-        private  final int EGL_OPENGL_ES3_BIT = 0x40;
-        public Cocos2dxEGLConfigChooser(int redSize, int greenSize, int blueSize, int alphaSize, int depthSize, int stencilSize, int multisamplingCount)
-        {
-            mConfigAttributes = new int[] {redSize, greenSize, blueSize, alphaSize, depthSize, stencilSize, multisamplingCount};
+        private final int EGL_OPENGL_ES2_BIT = 0x04;
+        private final int EGL_OPENGL_ES3_BIT = 0x40;
+
+        public Cocos2dxEGLConfigChooser(int redSize, int greenSize, int blueSize, int alphaSize, int depthSize, int stencilSize, int multisamplingCount) {
+            mConfigAttributes = new int[]{redSize, greenSize, blueSize, alphaSize, depthSize, stencilSize, multisamplingCount};
         }
-        public Cocos2dxEGLConfigChooser(int[] attributes)
-        {
+
+        public Cocos2dxEGLConfigChooser(int[] attributes) {
             mConfigAttributes = attributes;
         }
 
         @Override
-        public EGLConfig chooseConfig(EGL10 egl, EGLDisplay display)
-        {
+        public EGLConfig chooseConfig(EGL10 egl, EGLDisplay display) {
             int[][] EGLAttributes = {
-                {
-                    // GL ES 2 with user set
-                    EGL10.EGL_RED_SIZE, mConfigAttributes[0],
-                    EGL10.EGL_GREEN_SIZE, mConfigAttributes[1],
-                    EGL10.EGL_BLUE_SIZE, mConfigAttributes[2],
-                    EGL10.EGL_ALPHA_SIZE, mConfigAttributes[3],
-                    EGL10.EGL_DEPTH_SIZE, mConfigAttributes[4],
-                    EGL10.EGL_STENCIL_SIZE, mConfigAttributes[5],
-                    EGL10.EGL_SAMPLE_BUFFERS, (mConfigAttributes[6] > 0) ? 1 : 0,
-                    EGL10.EGL_SAMPLES, mConfigAttributes[6],
-                    EGL10.EGL_RENDERABLE_TYPE, EGL_OPENGL_ES2_BIT,
-                    EGL10.EGL_NONE
-                },
-                {
-                     // GL ES 2 with user set 16 bit depth buffer
-                     EGL10.EGL_RED_SIZE, mConfigAttributes[0],
-                     EGL10.EGL_GREEN_SIZE, mConfigAttributes[1],
-                     EGL10.EGL_BLUE_SIZE, mConfigAttributes[2],
-                     EGL10.EGL_ALPHA_SIZE, mConfigAttributes[3],
-                     EGL10.EGL_DEPTH_SIZE, mConfigAttributes[4] >= 24 ? 16 : mConfigAttributes[4],
-                     EGL10.EGL_STENCIL_SIZE, mConfigAttributes[5],
-                     EGL10.EGL_SAMPLE_BUFFERS, (mConfigAttributes[6] > 0) ? 1 : 0,
-                     EGL10.EGL_SAMPLES, mConfigAttributes[6],
-                     EGL10.EGL_RENDERABLE_TYPE, EGL_OPENGL_ES2_BIT,
-                     EGL10.EGL_NONE
-                },
-                {
-                     // GL ES 2 with user set 16 bit depth buffer without multisampling
-                     EGL10.EGL_RED_SIZE, mConfigAttributes[0],
-                     EGL10.EGL_GREEN_SIZE, mConfigAttributes[1],
-                     EGL10.EGL_BLUE_SIZE, mConfigAttributes[2],
-                     EGL10.EGL_ALPHA_SIZE, mConfigAttributes[3],
-                     EGL10.EGL_DEPTH_SIZE, mConfigAttributes[4] >= 24 ? 16 : mConfigAttributes[4],
-                     EGL10.EGL_STENCIL_SIZE, mConfigAttributes[5],
-                     EGL10.EGL_SAMPLE_BUFFERS, 0,
-                     EGL10.EGL_SAMPLES, 0,
-                     EGL10.EGL_RENDERABLE_TYPE, EGL_OPENGL_ES2_BIT,
-                     EGL10.EGL_NONE
-                },
-                {
-                    // GL ES 2 by default
-                    EGL10.EGL_RENDERABLE_TYPE, EGL_OPENGL_ES2_BIT,
-                    EGL10.EGL_NONE
-                }
+                    {
+                            // GL ES 2 with user set
+                            EGL10.EGL_RED_SIZE, mConfigAttributes[0],
+                            EGL10.EGL_GREEN_SIZE, mConfigAttributes[1],
+                            EGL10.EGL_BLUE_SIZE, mConfigAttributes[2],
+                            EGL10.EGL_ALPHA_SIZE, mConfigAttributes[3],
+                            EGL10.EGL_DEPTH_SIZE, mConfigAttributes[4],
+                            EGL10.EGL_STENCIL_SIZE, mConfigAttributes[5],
+                            EGL10.EGL_SAMPLE_BUFFERS, (mConfigAttributes[6] > 0) ? 1 : 0,
+                            EGL10.EGL_SAMPLES, mConfigAttributes[6],
+                            EGL10.EGL_RENDERABLE_TYPE, EGL_OPENGL_ES2_BIT,
+                            EGL10.EGL_NONE
+                    },
+                    {
+                            // GL ES 2 with user set 16 bit depth buffer
+                            EGL10.EGL_RED_SIZE, mConfigAttributes[0],
+                            EGL10.EGL_GREEN_SIZE, mConfigAttributes[1],
+                            EGL10.EGL_BLUE_SIZE, mConfigAttributes[2],
+                            EGL10.EGL_ALPHA_SIZE, mConfigAttributes[3],
+                            EGL10.EGL_DEPTH_SIZE, mConfigAttributes[4] >= 24 ? 16 : mConfigAttributes[4],
+                            EGL10.EGL_STENCIL_SIZE, mConfigAttributes[5],
+                            EGL10.EGL_SAMPLE_BUFFERS, (mConfigAttributes[6] > 0) ? 1 : 0,
+                            EGL10.EGL_SAMPLES, mConfigAttributes[6],
+                            EGL10.EGL_RENDERABLE_TYPE, EGL_OPENGL_ES2_BIT,
+                            EGL10.EGL_NONE
+                    },
+                    {
+                            // GL ES 2 with user set 16 bit depth buffer without multisampling
+                            EGL10.EGL_RED_SIZE, mConfigAttributes[0],
+                            EGL10.EGL_GREEN_SIZE, mConfigAttributes[1],
+                            EGL10.EGL_BLUE_SIZE, mConfigAttributes[2],
+                            EGL10.EGL_ALPHA_SIZE, mConfigAttributes[3],
+                            EGL10.EGL_DEPTH_SIZE, mConfigAttributes[4] >= 24 ? 16 : mConfigAttributes[4],
+                            EGL10.EGL_STENCIL_SIZE, mConfigAttributes[5],
+                            EGL10.EGL_SAMPLE_BUFFERS, 0,
+                            EGL10.EGL_SAMPLES, 0,
+                            EGL10.EGL_RENDERABLE_TYPE, EGL_OPENGL_ES2_BIT,
+                            EGL10.EGL_NONE
+                    },
+                    {
+                            // GL ES 2 by default
+                            EGL10.EGL_RENDERABLE_TYPE, EGL_OPENGL_ES2_BIT,
+                            EGL10.EGL_NONE
+                    }
             };
 
             EGLConfig result = null;
